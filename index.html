@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========================font Awsome cdn link========================  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>BuzzHub Social Media Website</title>
+</head>
+
+<body>
+    <!-- ==========================navbar start=============== -->
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                BuzzHub
+            </h2>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for creators,inspiration,and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="images/profile-1.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ==========================navbar end=============== -->
+
+    <!-- ==========================main start=============== -->
+
+    <main>
+        <div class="container">
+            <!-- =======================left==================== -->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Diana Ayi</h4>
+                        <p class="text-muted">@dayi</p>
+                    </div>
+                </a>
+                <!-- ===================sidebar================= -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i></span>
+                        <h3>Notifications</h3>
+                        <!-- =======================Notifications popup=========== -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Keke Benjamin</b>accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Jon Doen</b>comment on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Marry Openyhs</b> and <b>283 others</b>liked your post
+                                    <small class="text-muted">7 MINUTES AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-5.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Derry forthes</b> comment on a post you are tagged in
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Nawaz Sharef</b> comment on a post you are tagged in
+                                    <small class="text-muted">7 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-7.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Mobben Malik</b> comment on your post
+                                    <small class="text-muted">17 DAYS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notification">
+                        <span><i class="fa-solid fa-envelope"><small class="notification-count">7</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-bookmark"></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-chart-simple"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="fa-solid fa-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-gear"></i></span>
+                        <h3>Setting</h3>
+                    </a>
+
+
+
+
+                </div>
+                <!-- ===================End  sidebar================= -->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+
+            </div>
+            <!-- =======================middle start==================== -->
+
+            <div class="middle">
+                <!-- ===================== Start Stories================== -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/profile-8.jpg">
+                        </div>
+                        <p class="name">
+                            Your Story
+                        </p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/profile-9.jpg">
+                        </div>
+                        <p class="name">
+                            lilla James
+                        </p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/profile-10.jpg">
+                        </div>
+                        <p class="name">
+                            Arslan John
+                        </p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/profile-11.jpg">
+                        </div>
+                        <p class="name">
+                            Ashraf Michls
+                        </p>
+                    </div>
+
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/profile-12.jpg">
+                        </div>
+                        <p class="name">
+                            Mobeen Masshi
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <!-- ===================== End of Stories================== -->
+
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind,Diana?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+
+                <!-- ==============================Feeds========================= -->
+
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-2.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-1.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-3.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-2.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-14.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-3.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-2.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-4.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-15.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-5.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-19.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-6.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-5.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-7.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Lana Rose</h3>
+                                    <small>Asia, 20 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-1.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="fa-solid fa-heart"></i></span>
+                                <span><i class="fa-solid fa-comment"></i></span>
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/profile-10.jpg"></span>
+                            <span><img src="images/profile-5.jpg"></span>
+                            <span><img src="images/profile-8.jpg"></span>
+                            <p>Liked by <b>Ernest Johnes</b>and <b>2,670 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Rohdes </b>Lorem ipsum dolor sit amet. <span class="harsh-tag">#Hotstyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 366 comments
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- =======================middle start==================== -->
+
+
+            <!-- =======================right==================== -->
+
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <!-- =========================Search Bar====================== -->
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                    <!-- =========================messages category====================== -->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(3)</h6>
+                    </div>
+                    <!-- =========================messages category====================== -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-14.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Alies</h5>
+                            <p class="text-muted">
+                                Please Harder
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-4.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Aryan Malik</h5>
+                            <p class="text-muted">
+                                Just Wake Up BC
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-10.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5> Malik</h5>
+                            <p class="text-bold">
+                                Hello
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-11.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Ayesha Michle</h5>
+                            <p class="text-muted">
+                                Akram Kaha hu
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-18.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Junaid bhai</h5>
+                            <p class="text-muted">
+                                Baby Chlein
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- =========================messages End====================== -->
+
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-11.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajija Bente</h5>
+                                <p class="text-muted">
+                                    5 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-12.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajija Bente</h5>
+                                <p class="text-muted">
+                                    5 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-18.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajija Bente</h5>
+                                <p class="text-muted">
+                                    5 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- =======================right End==================== -->
+
+
+        </div>
+    </main>
+    <!-- ==========================main end=============== -->
+
+    <!-- ===============================Theme Customization=========================== -->
+
+<div class="customize-theme">
+    <div class="card">
+        <h2>Customize your view</h2>
+        <p class="text-muted">Manage your font size, color, and background</p>
+
+        <!-- -----------------------------Font Sizes--------------------------- -->
+        <div class="font-size">
+            <h4>Font Size</h4>
+            <div>
+                <h6>Aa</h6>
+                <div class="choose-size">
+                    <span class="font-size-1"></span>
+                    <span class="font-size-2 active"></span>
+                    <span class="font-size-3"></span>
+                    <span class="font-size-4"></span>
+                    <span class="font-size-5"></span>
+                </div>
+                <h3>Aa</h3>
+            </div>
+        </div>
+
+        <!-- ------------------------------primary colors--------------------- -->
+
+        <div class="color">
+            <h4>Color</h4>
+            <div class="choose-color">
+                <span class="color-1 active"></span>
+                <span class="color-2 "></span>
+                <span class="color-3 "></span>
+                <span class="color-4 "></span>
+                <span class="color-5 "></span>
+            </div>
+        </div>
+
+        <!-- -----------------------------Backgrounds Color--------------------- -->
+
+        <div class="background">
+            <h4>Background</h4>
+            <div class="choose-bg">
+                <div class="bg-1 active">
+                    <span></span>
+                    <h5 for="bg-1">Light</h5>
+                </div>
+
+                <div class="bg-2">
+                    <span></span>
+                    <h5>Dim</h5>
+                </div>
+
+                <div class="bg-3">
+                    <span></span>
+                    <h5 for="bg-3">Lights Out</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- ========================Own JS Link========================  -->
+    <script src="app.js"></script>
+</body>
+
+</html>
